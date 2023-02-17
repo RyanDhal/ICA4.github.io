@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA4</title>
+</head>
+<body class="container_main_grid">
+    
+        <header class="container text_center grid_mobile" id="header">
+            <h1 class="text_shadow">ica-04 - CSS Grid Forms</h1>
+
+        </header>
+        <br>
+        <form action="https://thor.cnt.sast.ca/~rdhaliwa/ryan_dhaliwal_folder/cmpe2000/icas/ica4/ica04.php" method="post" class="grid_mobile container_nested container_web">
+            <div>
+                <input  type="hidden" name="hidden_value" value="your_name">
+            </div>
+            
+            <div id="username">
+                <label for="username">Username: </label> <br>
+                <input type="text" name="username" maxlength="16" placeholder="Your Username"> 
+            </div>
+
+            <div id="password">
+                <label for="pin">Pin: </label> <br>
+                <input type="text" name="pin" maxlength="6" placeholder="Your Pin"> 
+            </div>
+            
+            <div id="range">
+                <label for="byte_value">Byte Value:</label> <br>
+                <input class="range_width" type="range" name="byte_value" min="0" max="255"> 
+            </div>
+
+            <div id="date_field">
+                <label for="date-input">Best date:</label>
+                <input type="date" id="date-input" name="date_value" value="09-Sep-1967">
+            </div>
+
+            <div id="color_field">
+                <label for="color-input">Best color:</label> 
+                <input type="color" id="color-input" name="color_value" value="#ABCDEF">
+            </div>
+
+            
+
+            <fieldset id="radio_button">
+                <legend>Preferred Travel</legend>
+                <label><input type="radio" name="travel" value="Planes/Aircraft" required>Planes</label> <br>
+                <label><input type="radio" name="travel" value="Trains/Railway" required>Trains</label> <br>
+                <label><input type="radio" name="travel" value="Automobiles/Car" required>Automobiles</label> <br> 
+            </fieldset> 
+
+            <div id="select_control">
+
+                <label for="science_fiction">Choice of Sci-Fi:</label>
+                <select id="science_fiction" name="science_fiction">
+                <option value="Metropolis">Really Old</option>
+                <option value="Star Trek">Old</option>
+                <option value="Star Wars">Kinda Old</option>
+                <option value="Dune">Recent</option>
+                </select> 
+            </div>
+
+            <div id="checkbox">
+                <label for="acknowledge">Acknowledge Use:</label>
+                <input type="checkbox" name="acknowledge"> <br>
+            </div>
+
+            <div id="reset_button">
+                <input class="text_center_full" type="reset" name="reset_form" value="Reset Form">
+            </div>
+
+            <div  id="test_button">
+            <input class="text_center_full" type="submit" name="test_submit" value="Test Submission">
+            </div>
+
+        </form>
+
+        <div id="footer" >
+            <footer class="container_footer" >
+                <span>&#169;</span> Ryan Dhaliwal
+                <br>
+                <a class = "user" href="../../index.html">Home</a>
+                <br>
+                <script>
+                    document.write("Last modified on: " + document.lastModified);
+                </script>
+            </footer>
+        </div>
+
+</body>
+</html>

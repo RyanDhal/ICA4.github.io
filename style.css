@@ -1,0 +1,263 @@
+
+.container
+{
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.container_footer
+{
+    background-color: lightgray;
+    text-align: center;
+    border: 3px solid black;
+    font-size: x-small;
+}
+
+.grid_mobile
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px;
+}
+
+.table
+{
+    text-align: center;
+}
+
+#header
+{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    row-gap: 0;
+}
+
+#username
+{
+
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    
+}
+
+
+#password
+{
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+#range
+{
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+#date_field
+{
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+
+#color_field
+{
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+#radio_button
+{
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+#select_control
+{
+    grid-row-start: 7;
+    grid-row-end: span 1;
+}
+
+#checkbox
+{
+    grid-row-start: 8;
+    grid-row-end: span 1;
+}
+
+#reset_button
+{
+    grid-row-start: 9;
+    grid-row-end: span 1;
+    row-gap: 0;
+}
+.range_width
+{
+    width: 100%;
+}
+#test_button
+{
+    grid-row-start: 10;
+    grid-row-end: span 1;
+    row-gap: 0;
+}
+
+.buttons
+{
+    align-self: center;
+    justify-items: center;
+}
+.text_center_full
+{
+    text-align: center;
+    width: 100%;
+}
+.text_center
+{
+    text-align: center;
+    color: white;
+}
+.text_shadow
+{
+    text-shadow: 2px 2px black;
+}
+input::placeholder
+{
+    opacity: 0.5;
+}
+div
+{
+    font-weight: bold;
+}
+label
+{
+    font-weight: bold;
+}
+legend
+{
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+}
+@media screen and ( min-width : 800px ) 
+{
+    body {}
+        
+    #site {
+        display: grid;
+    }
+
+    .container_main_grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: auto;
+    }
+    .container_nested
+    {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(5, auto);
+    }
+    #header
+    {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        row-gap: 0;
+    }
+    #footer
+    {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 5;
+        grid-row-end: span 1;
+        row-gap: 0;
+    }
+    #username
+    {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        
+        
+    }
+
+    .range_width
+    {
+        width: 90%;
+    }
+    #password
+    {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+    #range
+    {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        grid-column-start: 5;
+        grid-column-end: span 1;
+    }
+    
+    #date_field
+    {
+        grid-row-start: 4;
+        grid-row-end: span 1;
+    }
+
+    #color_field
+    {
+        grid-row-start: 4;
+        grid-row-end: span 1;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+    #radio_button
+    {
+        grid-row-start: 4;
+        grid-row-end: span 1;
+        grid-column-start: 5;
+        grid-column-end: span 1;
+    }
+
+    #select_control
+    {
+        grid-row-start: 7;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end:  span 2;
+    }
+
+    #checkbox
+    {
+        grid-row-start: 7;
+        grid-row-end: span 1;
+        grid-column-start: 2;
+        grid-column-end:  span 2;
+    }
+
+    #reset_button
+    {
+        grid-row-start: 9;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 5;
+    }
+
+    #test_button
+    {
+        grid-row-start: 10;
+        grid-row-end: span 1;
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        row-gap: 0;
+    }
+    .container_web
+    {
+        background-color: aqua;
+        border: 2px solid black;
+    }
+}
